@@ -1,0 +1,224 @@
+<!DOCTYPE html>                                                                                                                 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile-setting.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Admin Panel Dashboard</title>
+  </head>
+
+  <body>
+    <section class="left">
+      <nav>
+        <div class="logo">
+          <img src="desktop-dark.png" alt="" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">CRM</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Stocks</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Advances UI</a></li>
+            <li><a href="#">Basic UI</a></li>
+            <li><a href="#">Nested Menu</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">Charts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="main">
+      <nav class="main">
+            <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-bell"></i>
+            </div>
+        </nav>
+        <div class="main-dashboard">
+            <h2 class="heading">Dashboard</h2>
+            <div class="container">
+                <div class="two-blocks">
+                    <div class="one-block blocks">
+                        <div class="bg-img">
+                            <div class="bg-img-overlay">
+                                
+                                <img src="3.jpg" alt="">
+                                <span>
+                                    <div class="inputWrapper">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        <input class="fileInput" type="file" name="file1"/>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#" class="active">
+                            <div class="icon-tab active-white">
+                                <i class="fa-solid fa-user-tie active-white"></i>
+                                <span class="icon-tabs-info">Personal Setting</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="icon-tab">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="icon-tabs-info">General Setting</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="icon-tab">
+                                <i class="fa-solid fa-user-lock"></i>
+                                <span class="icon-tabs-info">Password Setting</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="icon-tab">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span class="icon-tabs-info">Account Setting</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="icon-tab">
+                                <i class="fa-regular fa-bell"></i>
+                                <span class="icon-tabs-info">Notification Setting</span>
+                            </div>
+                        </a>
+
+                        
+                    </div>
+                    <div class="two-block">
+                        <div class="header">
+                            <div class="icon-tab">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <span class="icon-tabs-info">Personal Setting</span>
+                            </div>
+                        </div>
+                        <div class="form-table">
+                            <div class="login-form">
+                                <form action="">
+                                    <div class="six-column">
+                                        <div class="one-column form-fields">
+                                            <label for="f-name">First Name:</label><br>
+                                            <input type="text" name="First Name" placeholder="First Name">
+                                        </div>
+                                            
+                                        <div class="one-column form-fields">
+                                            <label for="l-name">Last Name:</label><br>
+                                            <input type="text" name="First Name" placeholder="Last Name">
+                                        </div>
+    
+                                        <div class="one-column form-fields">
+                                            <label for="phone">Phone Number:</label><br>
+                                            <input type="tel" name="Phone Number" placeholder="+92 336 302 8259">
+                                        </div>
+    
+                                        <div class="one-column form-fields">
+                                            <label for="email">Email Address:</label><br>
+                                            <input type="email" name="Email Address" placeholder="your@site.com">
+                                        </div>
+    
+                                        <div class="one-column form-fields">
+                                            <label for="birthday">Date of Birth:</label><br>
+                                            <input type="date" name="Date of Birth" placeholder="Date of Birth">
+                                        </div>
+    
+                                        <div class="one-column form-fields radio-buttons">
+                                            <label for="birthday">Date of Birth:</label>
+                                            <ul class="multiple-radio-buttons">
+                                                <li class="multiple-radio-buttons-li male">
+                                                    <div class="radio-button-and-info">
+                                                        <div class="radio-button">
+                                                            <input type="radio" id="html" name="fav_language" value="HTML">
+                                                        </div>
+                                                        <label for="Male">Male</label>
+                                                    </div>
+                                                </li>
+    
+                                                <li class="multiple-radio-buttons-li female">
+                                                    <div class="radio-button-and-info">
+                                                        <div class="radio-button">
+                                                            <input type="radio" id="html" name="fav_language" value="HTML">
+                                                        </div>
+                                                        <label for="Male">Female</label>
+                                                    </div>
+                                                </li>
+    
+                                                <li class="multiple-radio-buttons-li others">
+                                                    <div class="radio-button-and-info">
+                                                        <div class="radio-button">
+                                                            <input type="radio" id="html" name="fav_language" value="HTML">
+                                                        </div>
+                                                        <label for="Male">Others</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <label for="address">Address:</label><br>
+                                            <input type="address" name="Address" placeholder="Address">
+                                    </div>
+                                    <div class="six-column">
+                                        <div class="one-column form-fields">
+                                            <label for="city">City:</label><br>
+                                            <input type="list" name="City" placeholder="City">
+                                        </div>
+                                            
+                                        <div class="one-column form-fields">
+                                            <label for="country">Country:</label><br>
+                                            <input type="list" name="Country" placeholder="Country">
+                                        </div>
+    
+                                        <div class="one-column form-fields">
+                                            <label for="state">State:</label><br>
+                                            <input type="list" name="State" placeholder="State">
+                                        </div>
+    
+                                        <div class="one-column form-fields">
+                                            <label for="pin-code">Pin Code:</label><br>
+                                            <input type="list" name="Pin Code" placeholder="Pin Code">
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <label for="bio">Bio:</label><br>
+                                        <textarea name="bio" id="bio" cols="10" rows="3" placeholder="Add Your Bio"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="update">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                <a href="#">Update</a>
+                            </div>
+                            <div class="update cancel">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                                <a href="#">Cencel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+</body>    

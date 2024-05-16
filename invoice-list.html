@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invoice.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Admin Panel Dashboard</title>
+</head>
+
+<body>
+    <section class="left">
+        <nav>
+            <div class="logo">
+                <img src="desktop-dark.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">CRM</a></li>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Stocks</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Elements</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Advances UI</a></li>
+                    <li><a href="#">Basic UI</a></li>
+                    <li><a href="#">Nested Menu</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Charts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="main">
+        <nav class="main">
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </nav>
+        <div class="main-dashboard">
+            <h2 class="heading">Invoice</h2>
+            <div class="container">
+                <header class="invoice-list">
+                    <h3>Invoice List</h3>
+                    <div class="create-invoice">
+                        <i class="fa-solid fa-plus"></i>
+                        <a href="#">Create Invoice</a>
+                    </div>
+                </header>
+                <div class="subcontainer">
+                    <header class="subheader">
+                        <div class="left">
+                            <span>
+                                <input type="search" name="Search" id="">
+                                <button><i class="fas fa-search"></i></button>
+                            </span>
+                            <i class=" refresh fa-solid fa-arrows-rotate"></i>
+                            <i class="delete fa-solid fa-trash-arrow-up"></i>
+                        </div>
+                        <div class="right">
+                            <input type="date" placeholder="Filter Date">
+                            <div class="invoice">
+                                <p>All Invoices</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </header>
+
+                    <main class="subcontainer-main-section">
+                        <table class="product-list" style="width: 100%;">
+                            <thead>
+                                <tr class="head">
+                                    <th>
+                                        <input type="checkbox">
+                                    </th>
+                                    <th>INVOICE ID</th>
+                                    <th>CUSTOMER</th>
+                                    <th>CREATE DATE</th>
+                                    <th>DUE DATE</th>
+                                    <th>STATUS</th>
+                                    <th>PAYMENT MODE</th>
+                                    <th>AMOUNT</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

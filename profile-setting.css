@@ -1,0 +1,398 @@
+@font-face {
+    font-family: myfont;
+    src: url(inter.ttf);
+}
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    font-family: myfont;
+    height: 100vh;
+    background: #f2f2f9;
+}
+section.left {
+    background: #1e293b;
+    /* min-height: 100vh; */
+}
+
+
+nav {
+    text-align: center;
+}
+.logo {
+    border-bottom: 1px solid #727272;
+    /* padding: 20px 0; */
+}
+.menu ul {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 3rem;
+    text-align: left;
+    list-style: none;
+}
+nav {
+    text-align: center;
+    padding: 20px 0;
+}
+.main {
+    background: #fff;
+    border-bottom: 1px solid #727272;
+    text-align: right;
+}
+.main-dashboard h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+}
+i {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+}
+i:hover {
+    
+    font-size: 18px;
+    color: #8b8b8b;
+}
+.menu ul li a {
+    color: #94a8b3;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    color: #fff;
+}
+.icons {
+    padding-right: 20px;
+}
+.main-dashboard {
+    background-color: #f2f6f9;
+    /* height: 100vh; */
+    padding: 1.5rem;
+    text-align: left;
+}
+
+
+.two-blocks .blocks {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px;
+    height: fit-content;
+}
+
+.two-blocks .blocks .bg-img {
+    background: url(background-blue.png);
+    text-align: center;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.two-blocks .blocks .bg-img .bg-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.container .two-blocks {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 25% 1fr;
+    margin-top: 20px;
+}
+.two-blocks .blocks .bg-img .bg-img-overlay img {
+    border: 7px solid #32466a;
+    border-radius: 100px;
+    width: 110px;
+}
+
+
+.two-blocks .blocks a {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    align-items: center;
+    background: #f8fafc;
+    
+}
+
+.active {
+    text-decoration: none !important;
+    display: flex !important;
+    gap: 20px !important;
+    padding: 10px !important;
+    border: 1px solid #dedede !important;
+    border-radius: 5px !important;
+    align-items: center !important;
+    background: #5a66f1 !important;
+}
+
+.active-white{
+    color: #fff !important;
+}
+
+.two-blocks .blocks a:active {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    align-items: center;
+    background: #5a66f1;
+    
+}
+.two-blocks .blocks a .icon-tab {
+    color: #64748b;
+}
+
+.two-blocks .blocks a .icon-tab i {
+    color: #64748b;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.two-blocks .blocks a:active {
+    background: #5a66f1;
+}
+.two-blocks .blocks a:hover .icon-tab i, 
+.two-blocks .blocks a:hover .icon-tab span  {
+    color: #000;
+}
+
+.two-blocks .blocks a:active .icon-tab i, 
+.two-blocks .blocks a:active .icon-tab span  {
+    color: #fff;
+}
+
+
+.two-blocks .blocks a .icon-tab .icon-tabs-info {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.two-block {
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    /* height: fit-content; */
+}
+.two-block .header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dedede;
+}
+.two-block .header .icon-tab i.fa-solid.fa-user-tie {
+    padding: 0;
+}
+
+.two-block .form-table {
+    padding: 20px 20px 20px 20px;
+}
+
+.form-table .six-column {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px 30px;
+    padding: 12px;
+}
+
+.form-table .six-column .one-column.form-fields input {
+    width: 95%;
+    padding: 15px 10px 15px 10px;
+    margin: 7px 0;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    
+    -webkit-box-shadow: 0px 0px 5px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.5);
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 15%);
+    border: 1px solid #5a66f1;
+}
+
+.form-table .six-column .one-column.form-fields input:focus-visible {
+    
+    outline: none;
+    border: 1px solid #5a66f1;
+}
+
+
+.one-column.form-fields label {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.one-column.form-fields.radio-buttons .multiple-radio-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    display: flex;
+}
+
+.one-column.form-fields.radio-buttons .multiple-radio-buttons .male {
+    border: solid #dedede;
+    padding: 10px 16px;
+    border-radius: 5px 0px 0px 5px;
+    border-width: 1px 0px 1px 1px;
+    
+}
+
+.one-column.form-fields.radio-buttons .multiple-radio-buttons .female {
+    border: solid #dedede;
+    padding: 10px 16px;
+    border-radius: 0px;
+    border-width: 1px 1px 1px 1px;
+}
+
+.one-column.form-fields.radio-buttons .multiple-radio-buttons .others {
+    border: solid #dedede;
+    padding: 10px 16px;
+    border-radius: 0px 5px 5px 0px;
+    border-width: 1px 1px 1px 0px;
+}
+
+.one-column.form-fields.radio-buttons .multiple-radio-buttons li.multiple-radio-buttons-li .radio-button-and-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.one-column.form-fields.radio-buttons .multiple-radio-buttons li.multiple-radio-buttons-li .radio-button-and-info .radio-button input#html {
+    margin: 0;
+    width: 15px;
+    height: 15PX;
+    cursor: pointer;
+
+}
+.address {
+    padding: 12px 12px 0px 12px;
+}
+input {
+    width: 97%;
+    padding: 15px 10px 15px 10px;
+    margin: 7px 0;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+textarea#bio {
+    padding: 15px 10px 15px 10px;
+    margin: 7px 0;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 97%;
+}
+
+textarea#bio:focus-visible {
+    outline: none;
+    border: 1px solid #5a66f1;
+}
+
+.inputWrapper {
+    height: 26px;
+    width: 28px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 130px;
+    right: 90px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.inputWrapper i.fa-solid.fa-pencil {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.fileInput {
+    cursor: pointer;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    /*This makes the button huge. If you want a bigger button, increase the font size*/
+    font-size:50px;
+    /*Opacity settings for all browsers*/
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+.two-block .buttons {
+    padding: 15px 32px 15px 32px;
+    border-top: 1px solid #dedede;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+.two-block .buttons .update {
+    background: #5a66f11a;
+    color: #5a66f1;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.two-block .buttons .update i.fa-solid.fa-arrows-rotate {
+    padding: 3px;
+    font-size: 14px;
+    color: #5a66f1;
+}
+
+.two-block i.fa-regular.fa-circle-xmark {
+    padding: 3px;
+    font-size: 14px;
+}
+.two-block .buttons .update a {
+    color: #5a66f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+.two-block .buttons .cancel {
+    background: #60a5fa1a;
+}
+.two-block .buttons .cancel a {
+    color: #6aa5fa;
+}
+.two-block .buttons .cancel i.fa-regular.fa-circle-xmark {
+    color: #60a5fa;
+}
+

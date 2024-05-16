@@ -1,0 +1,263 @@
+@font-face {
+    font-family: myfont;
+    src: url(inter.ttf);
+}
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    font-family: myfont;
+}
+section.left {
+    background: #1e293b;
+    /* min-height: 100vh; */
+}
+
+
+nav {
+    text-align: center;
+}
+.logo {
+    border-bottom: 1px solid #727272;
+    /* padding: 20px 0; */
+}
+.menu ul {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 3rem;
+    text-align: left;
+    list-style: none;
+}
+nav {
+    text-align: center;
+    padding: 20px 0;
+}
+.main {
+    
+    border-bottom: 1px solid #727272;
+    text-align: right;
+}
+.main-dashboard h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+}
+i {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+}
+i:hover {
+    
+    font-size: 14px;
+    color: #8b8b8b;
+}
+.menu ul li a {
+    color: #94a8b3;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    color: #fff;
+}
+.icons {
+    padding-right: 20px;
+}
+.main-dashboard {
+    background-color: #f2f6f9;
+    height: 100vh;
+    padding: 1.5rem;
+    text-align: left;
+}
+.main-block {
+    padding: 1.3rem;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background: #fff;
+}
+svg.fill-primary {
+    height: 30px;
+    background: #eeeffe;
+    padding: 6px;
+    border-radius: 5px;
+    fill: #0055ff;
+}
+.block i.fa-solid.fa-star {
+    font-size: 12px;
+    margin: 0;
+    padding: 2px;
+    color: #0055ff;
+}
+
+.block span {
+    font-size: 12px;
+    background: #eeeffe;
+    padding: 6px;
+    border-radius: 50px;
+    color: #0055ff;
+    text-align: center;
+}
+.info h3 {
+    font-size: 24px;
+    line-height: 0.5;
+    font-weight: 600 !important;
+}
+.info p {
+    line-height: 0;
+    color: #94a8b3;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.container {
+    background-color: #fff;
+    margin-top: 30px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+
+.container header.invoice-list {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+}
+
+.block.block-1 {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    align-items: center;
+}
+
+h2.heading {
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+i {
+    font-size: 14px;
+    padding: 3px;
+}
+
+.container header.invoice-list h3 {
+    line-height: 0;
+}
+.container header.invoice-list .create-invoice {
+    padding: 8px 15px;
+    background: #5a66f1;
+    border-radius: 5px;
+}
+
+.container header.invoice-list .create-invoice i.fa-solid.fa-plus {
+    color: #fff;
+}
+
+.container header.invoice-list .create-invoice a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+header.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.invoice {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dedede;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+/* .left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} */
+.right .invoice p {
+    line-height: 0;
+    font-size: 14px;
+}
+.container .subcontainer {
+    padding: 20px;
+}
+input[type="search"] {
+    border: none;
+}
+
+.left button {
+    border: none;
+    background: #fff;
+    padding: 0;
+}
+
+header.subheader span {
+    border: 1px solid #dedede;
+    padding: 7px;
+    border-radius: 5px;
+    width: 250px;
+}
+.left i.refresh.fa-solid.fa-arrows-rotate {
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    color: #919191;
+    font-size: 15px;
+}
+.left button i.fas.fa-search {
+    color: #919191;
+}
+.left i.delete.fa-solid.fa-trash-arrow-up {
+    padding: 8px 12px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background: #F43F5E;
+    color: #fff;
+    font-size: 15px;
+}
+.left button i.fas.fa-search {
+    color: #919191;
+}
+input[type="date"] {
+    padding: 8px 10px;
+    width: 200px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+header.subheader .left {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    width: 30%;
+}
+.product-list {
+    border-collapse: collapse;
+    border-radius: 10px;
+    
+    
+}
+header.subheader span input {
+    width: 220px;
+}
+.product-list th {
+    font-weight: 500;
+    font-size: 13px;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    background-color: #f8fafc;
+    
+}
+.subcontainer-main-section {
+    padding-top: 20px;
+}
